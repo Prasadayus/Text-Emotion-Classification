@@ -26,7 +26,6 @@
   - Encoded labels for classification.
 
 ### 2. Model Training
-
 - **Gradient Boosting Models:**
   - Used Optuna for hyperparameter tuning of `LGBMClassifier` and `XGBClassifier`.
   - Evaluated cross-validation scores to select the best model.
@@ -35,8 +34,12 @@
   - Built a Sequential model with an Embedding layer, SimpleRNN layer, and Dense output layer.
   - Achieved an accuracy of approximately **89%** with this RNN model, which significantly outperforms traditional machine learning models that achieve **61-64%** accuracy.
 
+- **Gated RNN Model:**
+  - Enhanced the model by replacing the SimpleRNN layer with a `GRU` (Gated Recurrent Unit) layer.
+  - This improvement boosted the accuracy to **93.5%**, demonstrating a clear enhancement over the standard RNN.
+
 - **Model and Tokenizer Saving:**
-  - Saved the trained RNN model, tokenizer, and label encoder for future use.
+  - Saved the trained GRU model, tokenizer, and label encoder for future use.
 
 ### 3. Streamlit Application
 
